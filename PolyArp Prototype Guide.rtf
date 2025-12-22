@@ -1,0 +1,30 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2867
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 PolyArp Prototype Guide\
+\
+Audio DAC:\
+- I2S pins 38, 39, 40 // BCK, WS (LRCLK), DOUT (DIN)\
+- VIN -> 3.3V\
+- GND -> G (next to onboard audio out)\
+\
+Updating Firmware:\
+1. Download \'93PolyArp_Code.ino.bin\'94 from GitHub, https://github.com/algomusic/polyarp/\
+2. In a Chromium browser go to ESPConnect site, https://thelastoutpostworkshop.github.io/microcontroller_devkit/espconnect/ \
+3. Connect PolyArp to computer via USB\
+4. In ESPConnect, click \'93Connect\'94 and choose the JTAG/Serial connection from the popup dialog.\
+5. Click \'93Flash Tools\'94 in eSportsConnect (left hand column), scroll to Flash Firmware\
+6. Drag the downloaded .bin file onto the Firmware Binary area of ESPConnect\
+7. In the Recommended Offset dropdown, choose App0 - 0x10000\
+8. Click the \'93Flash Firmware\'94 button, and confirm \'93Flash\'94\
+9. The software will upload and the PolyArp will restart.\
+\
+Usage Guide: (TBC)\
+- Playing\
+- Sound editing\
+- Arpeggio\
+- Effects}
